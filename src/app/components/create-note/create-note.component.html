@@ -1,0 +1,15 @@
+
+<div class="CN_container-main-image">
+    <div class="CN_container-image">
+        <div class="CN_container-information">
+            <div class="CN_container-half-width">
+                <h1>Agenda tus propias notas</h1>
+                <p>Que no se te vuelva a olvidar nada¡</p>
+                <button *ngIf="goToNotes"  [routerLink]="['../notas']" class="CN_button-create-note pointer">Crea una nota</button>
+                <button *ngIf="!goToNotes" [routerLink]="['/acceso/iniciar-sesion']" class="CN_button-create-note pointer">Crea una nota</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

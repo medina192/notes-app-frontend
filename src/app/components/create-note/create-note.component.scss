@@ -1,0 +1,128 @@
+$yellow: #F4DA6E;
+$orange: #FC440F;
+$black: #223127;
+$white: #DAD2D8;
+$violet2: #694873;
+$violet3: #38040E;
+$brown: #621B00;
+$blue2: #4357AD;
+$violet4: #5F0F40;
+$violet5: #643173;
+$blue: #2E86AB;
+$otherBlue: #8D99AE;
+$ligthGreen: #4D8B31;
+$rose: #EFAAC4;
+$violet: #9999A1;
+$moreWhite: #FCDDF2;
+
+
+.CN_container-main-image{
+    background-color: $moreWhite;
+    width: 100wh;
+    height: calc( 100vh - 6.8rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CN_container-image{
+    background-image: url("https://cdn.pixabay.com/photo/2018/05/02/18/38/paper-3369336_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc( 100vh - 12.8rem);
+    width: 90%;
+    background-position-y: 50%;
+}
+
+.CN_container-information{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.CN_container-half-width{
+    width: 62%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CN_container-information h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.CN_container-information p{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.CN_button-create-note{
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    background-color: $violet4;
+    color: white;
+}
+
+@media (max-width: 500px){
+    .CN_container-main-image{
+        background-color: $moreWhite;
+        width: 100wh;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .CN_container-image{
+        background-image: url("https://cdn.pixabay.com/photo/2018/05/02/18/38/paper-3369336_960_720.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: calc( 100vh - 5rem);
+        width: 95%;
+        background-position-y: 50%;
+        background-position-x: 55%;
+    }
+    
+    .CN_container-information{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .CN_container-half-width{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .CN_container-information h1{
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    .CN_container-information p{
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .CN_button-create-note{
+        border: none;
+        padding: 1rem;
+        font-size: 2rem;
+        width: 15rem;
+        border-radius: 0.5rem;
+        background-color: $violet4;
+    }
+}

@@ -1,0 +1,53 @@
+
+<div class="r_container-register">
+    <div class="r_container-flex">
+      <form [formGroup]="forma" (ngSubmit)="saveRegister()" autocomplete="off"  >
+        <div class="r_container-fields">
+            <div class="r_container-user-icon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="r_container-icon-input">
+                <i class="fas fa-user"></i>
+                <input  type="text"  class="R_class-input" 
+                    [class.R_invalid-field]="invalidName" formControlName="nameUser" placeholder="Nombre de ususario"  />
+            </div>
+            <p class="R_label-danger" *ngIf="invalidName">El nombre debe tener mínimo 5 caracteres</p>
+            
+            <div class="r_container-icon-input">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Email" 
+                [class.R_invalid-field]="invalidEmail" formControlName="email" class="R_class-input" />
+            </div>
+            <p class="R_label-danger" *ngIf="invalidEmail">El email no es valido</p>
+
+            <div class="r_container-icon-input">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Contraseña" 
+                [class.R_invalid-field]="invalidPassword" formControlName="password"  class="R_class-input" />
+            </div>
+            <p class="R_label-danger" *ngIf="invalidPassword">La contraseña debe de tener mínimo 8 caracteres</p>
+        </div>
+        <label for="" class="R_label-checkbox">
+            <input type="checkbox" formControlName="terms" value="hi">
+            <p>Acepto los términos y condiciones</p>
+        </label>
+        <div class="r_container-button-access">
+            <button type="submit" class="pointer" >Registrarse</button>
+        </div>
+        <div class="R_error-register" *ngIf="displayNotRegister">
+            <p>Error en los campos, vuelve a llenar el formulario por favor</p>
+        </div>
+        <!--
+        <div class="r_container_google-auth">
+            <button class="r_div-button">
+                <img class="r_img-google" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="google button" />
+                <p>Registrarse con google</p>
+            </button>
+        </div>
+        -->
+        <div class="r_container-link-to-login">
+            <p>¿Ya tienes una cuenta?, <a [routerLink]="['../iniciar-sesion']" >inicia sesión aquí</a></p>
+        </div>
+      </form>
+    </div>
+</div>

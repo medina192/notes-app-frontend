@@ -1,0 +1,36 @@
+<div class="r_container-register">
+    <div class="r_container-flex">
+        <form (ngSubmit)="verifyLogin()" [formGroup]="loginForm">
+            <div class="r_container-fields">
+                <div class="r_container-user-icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                    <div class="r_container-icon-input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email" class=""
+                        formControlName="email"  />
+                    </div>
+                    <div class="r_container-icon-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" placeholder="Contraseña" class=""
+                        formControlName="password" />
+                    </div>
+            </div>
+            <div class="r_container-button-access">
+                <button class="pointer">Acceder</button>
+            </div>
+            <!--
+            <div class="r_container_google-auth">
+                <button type="submit" class="r_div-button">
+                    <img class="r_img-google" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="google button" />
+                    <p>Registrate con google</p>
+                </button>
+            </div>
+            -->
+            <div class="r_container-link-to-login">
+                <p>¿No tienes una cuenta?, <a [routerLink]="['../registro']" >Registrate aquí</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+

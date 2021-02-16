@@ -1,0 +1,18 @@
+<div  class="nn_new-notes">
+     <div class="nn_container-flex">
+        <form [formGroup]="note" class="nn_container-note">
+                <div class="nn_container-title-icon">
+                   <input formControlName="title" type="text" class="nn_input-title" placeholder="Nombre de la nota"/>
+                   <i class="fas fa-pencil-alt"></i>
+                </div>
+                <div class="nn_container-date">
+                    <p>Fecha límite</p>
+                   <input formControlName="deadline" type="date" class="nn_input-date"/>
+                </div>
+                <textarea formControlName="text" placeholder="No olvides escribir los detalles¡" ></textarea>
+                <div class="nn_ccontainer-icon-save">
+                   <i (click)="saveNote()" class="far fa-save pointer"></i>
+                </div>
+        </form>
+     </div>
+</div>

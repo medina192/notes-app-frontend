@@ -1,0 +1,149 @@
+$yellow: #F4DA6E;
+$orange: #FC440F;
+$black: #223127;
+$white: #DAD2D8;
+$violet2: #694873;
+$violet3: #38040E;
+$brown: #621B00;
+$blue2: #4357AD;
+$violet4: #5F0F40;
+$violet5: #643173;
+$blue: #2E86AB;
+$otherBlue: #8D99AE;
+$ligthGreen: #4D8B31;
+$rose: #EFAAC4;
+$violet: #9999A1;
+$moreWhite: #FCDDF2;
+
+
+.nv_container-navbar{
+    background-color: $rose;
+    padding: 0.7rem 1.5rem;
+}
+
+.nv_container-flex{
+    background-color: $rose;
+    display: flex;
+
+}
+
+.nv_icon-title{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.nv_icon-title i{
+    font-size: 2.8rem;
+    color: white;
+}
+
+.nv_icon-title h1{
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: white;
+    margin: 1rem;
+}
+
+.nv_register-login{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0rem;
+    font-size: 1.5rem;
+}
+
+.nv_register-login button{
+    margin-right: 1.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+}
+
+.nv_logout{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0rem;
+    font-size: 1.5rem;
+}
+
+.nv_logout button{
+    margin-right: 1.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+}
+
+
+
+
+
+
+@media(max-width: 500px){
+    .nv_container-navbar{
+        background-color: $rose;
+        padding: 1rem 0rem;
+    }
+    
+    .nv_container-flex{
+        background-color: $rose;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nv_icon-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    
+    .nv_icon-title i{
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    .nv_icon-title h1{
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        margin-bottom: 0;
+        color: white;
+    }
+
+    .nv_register-login{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6rem 0rem;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nv_register-login button{
+        margin: 0.8rem 0;
+        font-weight: 600;
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: white;
+    }
+    .nv_logout{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+

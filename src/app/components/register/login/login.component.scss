@@ -1,0 +1,168 @@
+$yellow: #F4DA6E;
+$orange: #FC440F;
+$black: #223127;
+$white: #DAD2D8;
+$violet2: #694873;
+$violet3: #38040E;
+$brown: #621B00;
+$blue2: #4357AD;
+$violet4: #5F0F40;
+$violet5: #643173;
+$blue: #2E86AB;
+$otherBlue: #8D99AE;
+$ligthGreen: #4D8B31;
+$rose: #EFAAC4;
+$violet: #9999A1;
+$moreWhite: #FCDDF2;
+
+.r_container-register{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.r_container-flex{
+
+}
+
+.r_container-fields{
+
+}
+
+.r_container-icon-input{
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.r_container-icon-input input{
+    margin-left: 1rem;
+    border: none;
+}
+
+.r_container-user-icon{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.r_container_google-auth{
+
+}
+
+.r_container-button-access{
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.r_container-button-access button{
+    background-color: $violet5;    
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+.r_container-link-to-login{
+    margin-top: 1rem;
+    text-align: right;
+}
+
+
+.r_container-link-to-login{
+    font-size: 1.5rem;
+}
+
+
+// google button
+
+.r_container_google-auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r_div-button{
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(176, 201, 201);
+    width: auto;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.r_div-button{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.r_img-google{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+@media (max-width: 500px){
+    .r_container-register{
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 95%;
+    }
+    
+    
+    .r_container-icon-input{
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+    
+    .r_container-icon-input input{
+        margin-left: 1rem;
+        border: none;
+        width: 70%;
+    }
+    
+    .r_container-user-icon{
+        font-size: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .r_container_google-auth{
+    
+    }
+    
+    .r_container-button-access{
+        margin-top: 2rem;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    
+    .r_container-button-access button{
+        background-color: $violet5;    
+        border: none;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .r_container-link-to-login{
+        margin-top: 1rem;
+        text-align: right;
+    }
+    
+    
+    .r_container-link-to-login{
+        font-size: 1.5rem;
+    }
+
+}

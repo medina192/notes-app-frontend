@@ -1,0 +1,152 @@
+$yellow: #F4DA6E;
+$orange: #FC440F;
+$black: #223127;
+$white: #DAD2D8;
+$violet2: #694873;
+$violet3: #38040E;
+$brown: #621B00;
+$blue2: #4357AD;
+$violet4: #5F0F40;
+$violet5: #643173;
+$blue: #2E86AB;
+$otherBlue: #8D99AE;
+$ligthGreen: #4D8B31;
+$rose: #EFAAC4;
+$violet: #9999A1;
+$moreWhite: #FCDDF2;
+
+
+.nn_new-notes{
+    width: 100%;
+    background-color: brown;
+    height: 90%;
+}
+
+.nn_container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.nn_container-note{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 5rem 1rem 5rem;
+    width: 90%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 12px 15px 5px rgba(0,0,0,0.24); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 12px 15px 5px rgba(0,0,0,0.24);
+    border-radius: 1rem;
+}
+
+.nn_container-title-icon{
+    display: flex;
+}
+
+.nn_input-title{
+    border: none;
+}
+
+.nn_container-title-icon input{
+    width: 85%;
+    font-size: 2rem;
+}
+
+.nn_container-title-icon i{
+    width: 15%;
+    text-align: right;
+    font-size: 2rem;
+}
+
+.nn_container-date{
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.nn_container-date p{
+    margin-right: 1rem;
+}
+
+.nn_input-date{
+    width: 40%;
+    font-size: 2rem;
+}
+
+.nn_container-note textarea{
+    font-size: 1.7rem;
+    height: 30rem;
+}
+
+.nn_ccontainer-icon-save{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.nn_ccontainer-icon-save i{
+    font-size: 4em;
+    background-color: $violet5;
+    padding: 1rem;
+    border-radius: 50%;
+    color: white;
+}
+
+
+
+
+@media (max-width: 500px){
+
+    .nn_container-note{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem 1rem 1rem;
+        width: 98%;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 12px 15px 5px rgba(0,0,0,0.24); 
+        box-shadow: 0px 10px 13px -7px #000000, 5px 12px 15px 5px rgba(0,0,0,0.24);
+        border-radius: 1rem;
+    }
+    
+    .nn_container-title-icon{
+        display: flex;
+    }
+    
+    .nn_input-title{
+        border: none;
+    }
+    
+    .nn_container-title-icon input{
+        width: 85%;
+        font-size: 2rem;
+    }
+    
+    .nn_container-title-icon i{
+        width: 15%;
+        text-align: right;
+        font-size: 2rem;
+    }
+    
+    .nn_container-date{
+        display: flex;
+        margin: 2rem 0;
+        align-items: center;
+        font-size: 2rem;
+    }
+    
+    .nn_container-date p{
+        margin-right: 1rem;
+    }
+    
+    .nn_input-date{
+        width: 60%;
+        font-size: 2rem;
+    }
+    
+    .nn_container-note textarea{
+        font-size: 1.7rem;
+        height: 30rem;
+    }
+}

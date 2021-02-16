@@ -1,0 +1,13 @@
+
+<div class="n_container-notes">
+    <div class="n_secondary-navbar">
+        <h3>La mejor app de notas</h3>
+    </div>
+    <div class="n_container-notes-newnote">
+        <app-savednotes (noteShowed)="receiveNote($event)" [currentNote]="newList" class="n_width-savednotes"></app-savednotes>
+        <app-newnotes (noteSaved)="updateListNotes($event)" 
+        *ngIf="!showCurrentNote" class="n_width-newnotes"></app-newnotes>
+        <app-notesview [currentNote]="currentNote" class="n_width-newnotes"
+            (goToNewNote)="goToNewNote($event)" *ngIf="showCurrentNote"></app-notesview>
+    </div>
+</div>

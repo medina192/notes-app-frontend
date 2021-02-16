@@ -1,0 +1,46 @@
+
+
+<div class="nv_container-noteShowed">
+    <div class="nv_container-flex">
+        <div *ngIf="deleteNoteMessage" class="nv_container-alert">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>¿En verdad quieres eliminar esta nota?</p>
+            <div class="nv_buttons-confirm">
+                <button (click)="confirmDelete()" class="nv_yes-delete">Sí</button>
+                <button (click)="noConfirmDelete()" class="nv_no-delete">No</button>
+            </div>
+        </div>
+        <form [formGroup]="editForm" *ngIf="currentNote && !deleteNoteMessage" class="container-content">
+            <h4 [hidden]="editActive">{{noteSaved.title}}</h4>
+            <input class="nv_input-title" *ngIf="editActive" placeholder="Nuevo título" 
+                formControlName="title" type="text"/>
+
+            <p class="nv_date">Fecha de expiración</p>
+            <input type="date" *ngIf="editActive" placeholder="Nueva fecha límite"
+                formControlName="deadline" />
+            <p class="nv_text-date" [hidden]="editActive">{{noteSaved.deadline}}</p>
+            <!--
+                            <p class="nv_date" [hidden]="editActive">Día de creación de la nota</p>
+            <p class="nv_text-date" [hidden]="editActive">{{currentNote.creationDate}}</p>
+            -->
+            <p class="nv_content" [hidden]="editActive" >{{noteSaved.text}}</p>
+            <textarea *ngIf="editActive" placeholder="Editar nota"
+                formControlName="text" ></textarea>
+            <p *ngIf="emptyFieldAlert" class="nv_alert-p"> No puede haber campos vacíos</p>    
+            <div class="container-icons-notesView">
+                <!--
+                <i class="fas fa-image icon-icon image-icon pointer" (click)="adjuntImage()" [hidden]="!editActive"></i>
+                -->
+                <i class="far fa-arrow-alt-circle-left icon-icon return-icon pointer" (click)="undoChanges()" [hidden]="!editActive"></i>
+                <i class="far fa-edit icon-icon edit-icon pointer" (click)="editIcon()" [hidden]="editActive"></i>
+                <i class="far fa-trash-alt icon-icon delete-icon pointer" (click)="deleteNote()" [hidden]="editActive"></i>
+                <i class="far fa-save icon-icon save-icon pointer" (click)="saveNote()" [hidden]="!editActive"></i>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+

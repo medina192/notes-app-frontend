@@ -1,0 +1,15 @@
+<div class="nv_container-navbar" #content>
+    <div class="nv_container-flex">
+        <div class="nv_icon-title">
+            <i class="fas fa-book-open"></i>
+            <h1>App de notas</h1>
+        </div>
+        <div class="nv_register-login" *ngIf="!tokenExists" >
+            <button [routerLink]="['/acceso/iniciar-sesion']" class="pointer">Acceder</button>
+            <button [routerLink]="['/acceso/registro']"  class="pointer">Registrarse</button>
+        </div>
+        <div class="nv_logout" *ngIf="tokenExists">
+            <button (click)="logOut()" class="pointer" >cerrar sesión</button>
+        </div>
+    </div>
+</div>

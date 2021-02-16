@@ -1,0 +1,31 @@
+<div class="n_save-notes">
+    <div *ngIf="notesExists" class="n_container-aux-error-ngIf">
+        <div class="n_individual-notes pointer" (click)="sendNote(i)" *ngFor="let note of notes; let i = index;">
+            <div class="n_title-note-icons">
+                <div class="n_title">
+                    <h6>{{note.title}}</h6> 
+                </div>
+                <!--
+                <div class="n_icons">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                -->
+            </div>
+            <div class="n_text-summary">
+                <p>{{note.text.substring(0,40)+'...'}}</p>
+            </div>
+            <div class="n_expiration-message">
+                <p class="n_exp-date">{{note.deadline}}</p>
+                <!--
+                <p class="n_exp-message">hola</p>
+                -->
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!notesExists" class="n_container-message-notes-empty">
+        <p>No tienes notas aún, escribe una¡</p>
+    </div>
+</div>
+

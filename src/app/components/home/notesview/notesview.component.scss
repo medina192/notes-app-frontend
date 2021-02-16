@@ -1,0 +1,260 @@
+
+$yellow: #F4DA6E;
+$orange: #FC440F;
+$black: #223127;
+$white: #DAD2D8;
+$violet2: #694873;
+$violet3: #38040E;
+$brown: #621B00;
+$blue2: #4357AD;
+$violet4: #5F0F40;
+$violet5: #643173;
+$blue: #2E86AB;
+$otherBlue: #8D99AE;
+$ligthGreen: #4D8B31;
+$rose: #EFAAC4;
+$violet: #9999A1;
+$moreWhite: #FCDDF2;
+
+.nv_container-noteShowed{
+    width: 100%;
+    $moreWhite: #FCDDF2;
+    height: 90vh;
+}
+
+.nv_container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.container-content{
+    background-color: $yellow;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 5rem 1rem 5rem;
+    width: 90%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 12px 15px 5px rgba(0,0,0,0.24); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 12px 15px 5px rgba(0,0,0,0.24);
+    border-radius: 1rem;
+    align-items: center;
+}
+
+
+.container-content h4{
+    font-size: 3rem;
+}
+
+.nv_input-title{
+    width: 70%;
+}
+
+.nv_date{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+.nv_content{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.container-content textarea{
+    margin-top: 1.5rem;
+    width: 90%;
+}
+
+.nv_alert-p{
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: #e75555;
+    color: red;
+    margin-top: 1rem;
+;}
+
+.container-icons-notesView{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.container-icons-notesView i{
+    margin-left: 2.5rem;
+    color: white;
+}
+
+.icon-icon{
+    border-radius: 50%;
+    padding: 0.9rem;
+    color: white;
+}
+
+.return-icon{
+    background-color: $violet5;
+}
+
+.save-icon{
+    background-color: $violet5;
+
+}
+
+.edit-icon{
+    background-color: $violet5;
+
+}
+
+.delete-icon{
+    background-color: $violet5;
+}
+
+.image-icon{
+    background-color: $violet5;
+}
+
+
+.nv_container-alert{
+    padding: 3rem;
+    background-color: $yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nv_container-alert i{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.nv_container-alert p{
+    font-size: 2rem;
+}
+
+.nv_buttons-confirm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.nv_yes-delete{
+    padding: 1rem;
+    background-color: green;
+    font-size: 2rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.nv_no-delete{
+    padding: 1rem;
+    background-color: red;
+    font-size: 2rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.nv_text-date{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+@media (max-width: 500px){
+    .container-content{
+        background-color: $yellow;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 5rem 1rem 5rem;
+        width: 95%;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 12px 15px 5px rgba(0,0,0,0.24); 
+        box-shadow: 0px 10px 13px -7px #000000, 5px 12px 15px 5px rgba(0,0,0,0.24);
+        border-radius: 1rem;
+        align-items: center;
+    }
+    
+.container-content h4{
+    font-size: 3rem;
+}
+
+.nv_input-title{
+    width: 95%;
+}
+
+.nv_date{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    width: 95%;
+    text-align: center;
+}
+
+.nv_content{
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+.container-content textarea{
+    margin-top: 1.5rem;
+    width: 95%;
+}
+
+.nv_alert-p{
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 90%;
+    background-color: #e75555;
+    color: red;
+    margin-top: 1rem;
+;}
+
+.container-icons-notesView{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.container-icons-notesView i{
+    margin-left: 2.5rem;
+}
+
+.icon-icon{
+    border-radius: 50%;
+    padding: 0.9rem;
+    color:white;
+}
+
+.return-icon{
+    background-color: $violet5;
+}
+
+.save-icon{
+    background-color: $violet5;
+
+}
+
+.edit-icon{
+    background-color: $violet5;
+
+}
+
+.delete-icon{
+    background-color: $violet5;
+}
+
+.image-icon{
+    background-color: $violet5;
+}
+}
+
